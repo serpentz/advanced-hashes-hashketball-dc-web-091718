@@ -25,7 +25,7 @@ def team_colors(team)
   arr =[]
   $data.each do |key, value|
     if key[:team_name] == team
-      arr<< value[:colors].flatten
+      arr= value[:colors]
     end
   end
   arr
