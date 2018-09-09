@@ -1,4 +1,5 @@
 # Write your code here!
+require 'pry'
 $data = {
    home: {
       team_name: "Brooklyn Nets",
@@ -23,7 +24,8 @@ end
 def team_colors(team)
   $data.map do |key, value|
     if key.to_s == team
-      value[:colors].flatten
+      value[:colors].flatten\
+      binding.pry
     end
   end
 end
