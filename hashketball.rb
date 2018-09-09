@@ -24,7 +24,7 @@ end
 def team_colors(team)
   $data.map do |key, value|
     if key[:team_name] == team
-      value[:colors].flatten\
+      value[:colors].flatten
       binding.pry
     end
   end
