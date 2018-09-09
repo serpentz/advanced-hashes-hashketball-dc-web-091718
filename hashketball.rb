@@ -28,4 +28,5 @@ def team_colors(team)
       arr<< value[:colors].flatten
     end
   end
+  arr
 end
