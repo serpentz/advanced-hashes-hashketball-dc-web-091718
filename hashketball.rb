@@ -23,7 +23,7 @@ end
 
 def team_colors(team)
   $data.each do |key, value|
-    if key[:team_name] == team
+    if key[:team_name].to_s == team
       value[:colors]
     end
   end
