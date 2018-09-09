@@ -22,9 +22,10 @@ def num_points_scored(player)
 end
 
 def team_colors(team)
+  arr =[]
   $data.each do |key, value|
     if key[:team_name].to_s == team
-      value[:colors]
+      arr<< value[:colors].flatten
     end
   end
 end
