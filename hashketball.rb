@@ -30,3 +30,7 @@ def team_colors(team)
   end
   arr
 end
+
+def team_names
+  [] << $data[:home][:team_name] <<$data[:away][:team_name]
+end
